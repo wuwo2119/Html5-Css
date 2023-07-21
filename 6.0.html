@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            表单
+        </title>
+    </head>
+    <body>
+        <form>
+        <p align="center">网站会员登陆</p><br/>
+        用户名称<input type="text" name="user" size="20"><br>
+        用户密码<input type="password" name="password" maxlength="6"><br>
+        <input type="submit" value="登陆">
+
+        <br><br>
+        请输入你的姓名
+        <input type="text" name="yourname" size="20" maxlength="10"><br><br>
+
+        输入你的想法<br>
+        <textarea name="yourthink" cols="50" rows="5"></textarea><br>
+        <input type="submit" value="提交"><br><br>
+        
+        <h4>调查</h4>
+        <input type="radio" name="book" value="book1">1<br>
+        <input type="radio" name="book" value="book2">2<br><br>
+
+        <h4>复选</h4>
+        <input type="checkbox" name="book" value="book1">1<br>
+        <input type="checkbox" name="book" value="book2">2<br>
+        <input type="checkbox" name="book" value="book3">3<br>
+        <input type="submit" value="添加至购物篮"><br><br>
+
+        <h4>复制粘贴</h4>
+        我喜欢:<input type="text" name="1" value="HTML5"><br>
+        我购买:<input type="text" name="2" value="HTML5"><br>
+        <input type="button" name="..." value="复制粘贴" onClick="document
+        .getElementById('2').value=document.getElementById('1').value"><br><br>
+
+        <h4>submit</h4>
+        你的名字:<input type="submit" value="提交"><br><br>
+
+        <h4>重置</h4>
+        用户名称<input type="text" name="user" size="20" maxlength="10"><br>
+        用户密码<input type="password" name="password" maxlength="6"><br>
+        <input type="submit" value="登陆">
+        <input type="reset" value="重置"><br><br>
+
+        <h4>图像和文件</h4>
+            <h3>请上传正面</h3>
+            <input type="file"><br>
+            <h3>请上传反面</h3>
+            <input type="file"><br><br>
+            <input type="image" src="1img/wallhaven-1kvq89.jpeg" width="15" height="30" name="submit" value="提交"><br><br>
+
+        <h4>列表</h4>
+        <p>请选择:</p><br>
+        <select>
+            <option>初中</option>
+            <option>高中</option>
+            <option>大学</option>
+        </select><br>
+
+        <div align="right">
+        <p>请选择:</p><br>
+        <select name="book" size="3" multiple>
+            <option value="1">初中</option>
+            <option value="2">高中</option>
+            <option value="3">大学</option>
+        </select>
+        </div><br><br>
+        
+        <h4>url属性</h4>
+        <input type="url" name="userurl" max="10" min="3">
+        <input type="submit" value="提交"><br><br>
+
+        <h4>email属性</h4>
+        <input type="email" name="user_email"/><br>
+        <input type="submit" value="提交"><br><br>
+
+        <h4>时间</h4>
+        购买商品的时间:<br>
+        <input type="date" name="user_date"><br><br>
+
+        <h4>number</h4>
+        一共<input type="number" name="user_number">次<br><br>
+
+        <h4>range</h4>
+        我的成绩:<br>
+        <input type="range" name="user_range" min="1" max="15"/><br><br>
+
+        <h4>不能为空required</h4>
+        用户名称<input type="text" name="user" size="20" required="required"><br>
+        用户密码<input type="password" name="password" maxlength="6"><br>
+        <input type="submit" value="提交">
+        </form>
+    </body>
+</html>
